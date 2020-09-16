@@ -1,0 +1,147 @@
+.inputBlock {
+    margin-top: 30px;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.inputBlock input {
+    outline: none;
+}
+
+.change, .get {
+    font-size: 22px;
+    display: flex;
+    max-width: 40%;
+    flex-direction: column;
+}
+
+.valueBlock {
+    display: flex;
+    width: 100%;
+    font-size: 22px;
+    justify-content: space-between;
+}
+
+.valueBlock input {
+    font-size: 22px;
+    max-width: 70%;
+    margin-right: 5%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.valueBlock select {
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
+
+.arrows {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.fa-exchange-alt {
+    font-size: 24px;
+    color: rgb(12, 120, 214);
+    transition: color 1s;
+}
+
+.fa-exchange-alt:hover {
+    cursor: pointer;
+    color: #000;
+}
+
+.calculateButton {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(12, 120, 214);
+    padding: 10px 20px;
+    color: rgb(12, 120, 214);
+    transition: box-shadow .5s, color .5s;
+    margin-top: 30px;
+}
+
+.calculateButton:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #000;
+}
+
+.inputBlockWrapper {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width:767px) and (orientation: portrait) {
+    .inputBlock {
+        flex-direction: column;
+        align-items: center;
+    }
+    .arrows {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:400px) and (orientation: portrait) {
+    .change, .get {
+        font-size: 14px;
+        max-width: 60%;
+    }
+    .valueBlock input {
+        font-size: 14px;
+    }
+    .valueBlock select {
+        font-size: 14px;
+    }
+    .arrows {
+        margin-top: 20px;
+    }
+    .inputBlock {
+        margin-top: 10px;
+    }
+    .calculateButton {
+        margin-top: 10px;
+    }
+}
+
+@media(max-height:767px) and (orientation: landscape) {
+    .calculateButton {
+        margin-top: 20px;
+    }
+    .inputBlock .title {
+        font-size: 14px;
+    }
+    .arrows {
+        font-size: 14px;
+    }
+}
+
+@media(max-height:400px) and (orientation: landscape) {
+    .calculateButton {
+        margin-top: 20px;
+    }
+    .inputBlock .title {
+        font-size: 12px;
+    }
+    .arrows {
+        font-size: 12px;
+    }
+    .calculateButton {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .valueBlock select {
+        font-size: 14px;
+    }
+}

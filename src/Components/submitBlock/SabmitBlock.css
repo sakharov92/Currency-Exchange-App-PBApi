@@ -1,0 +1,68 @@
+.submitBclock {
+    z-index: 2;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    right: 15px;
+    top: 15px;
+    display: flex;
+    display: none;
+}
+
+.showSubmitBlock {
+    display: flex;
+}
+
+.resolve, .reject {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+}
+
+.resolve {
+    border: 1px solid rgb(98, 166, 187);
+    background-color: #fff;
+    color: rgb(47, 121, 25);
+}
+
+.reject {
+    border: 1px solid rgb(98, 166, 187);
+    background-color: #fff;
+    color: rgb(163, 22, 22);
+}
+
+.disabled {
+    color: gray;
+}
+
+@media(max-width:767px) and (orientation: portrait) {
+    .submitBclock {
+        width: 40px;
+        height: 20px;
+        right: 0;
+        top: 0px;
+    }
+    .resolve, .reject {
+        font-size: 0.7em;
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media(max-height:767px) and (orientation: landscape) {
+    .submitBclock {
+        width: 40px;
+        height: 20px;
+        right: 5px;
+        top: 0px;
+    }
+    .resolve, .reject {
+        font-size: 0.7em;
+        height: 20px;
+        width: 20px;
+    }
+}

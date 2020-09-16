@@ -1,0 +1,113 @@
+tbody {
+  width: 90%;
+}
+
+table {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+}
+
+td {
+  border: 1px solid black;
+  width: 33%;
+  font-size: 22px;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+}
+td .wrapper {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+td input {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  box-sizing: border-box;
+  font-size: 22px;
+  text-align: center;
+}
+.inputBlockCell input {
+  outline: none;
+}
+
+.inputBlockCell input:focus~.edit {
+  display: none;
+}
+
+.inputBlockCell input:focus {
+  outline: auto;
+}
+
+.inputBlockCell:hover .edit {
+  display: block;
+}
+
+.inputBlockCell:hover input {
+  outline: auto;
+}
+
+.inputBlockCell {
+  margin: 0;
+}
+
+
+
+
+
+@media(max-width:767px) and (orientation: portrait) {
+  td input {
+    font-size: 16px;
+  }
+  td {
+    font-size: 14px;
+    padding: 1px;
+  }
+  td .wrapper {
+    padding: 5px;
+  }
+}
+
+@media(max-width:400px) and (orientation: portrait) {
+  td input {
+    font-size: 14px;
+  }
+  td {
+    font-size: 12px;
+    padding: 1px;
+  }
+  td .wrapper {
+    padding: 4px;
+  }
+}
+
+@media(max-height:767px) and (orientation: landscape) {
+   td {
+    font-size: 14px;
+    padding: 5px;
+  }
+  td .wrapper {
+    padding: 5px;
+  }
+  td input {
+    font-size: 14px;
+  }
+ }
+
+@media(max-height:400px) and (orientation: landscape) {
+   td {
+    font-size: 12px;
+    padding: 4px;
+  }
+  td .wrapper {
+    padding: 4px;
+  }
+  td input {
+    font-size: 12px;
+  }
+}
